@@ -1,0 +1,40 @@
+#main{
+    background-image:url("https://uploads-ssl.webflow.com/5ed7c0d23d6b9905f1127742/5ed7c0d23d6b9917cb127782_Nav%20Logo.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: rgb(5, 5, 5);
+}
+h1{
+    color: rgb(31, 89, 247);
+    display: flex;
+    justify-content: center;
+    text-shadow: 2px 2px 4px #cf01c5;
+    font-size: 50pt;
+}
+#container{
+    display: table;
+    
+    justify-content: center;  
+    width: 75%;
+    height:75%;
+}
+
+.form-group {
+    margin-top: 5%;
+    padding: 3%;
+}
+.label{
+    font-size: 20pt;
+    font-weight: bolder;
+    color: rgb(206, 27, 131);
+}
+#title{
+    font-size: 25pt;
+    color: cornsilk;
+    position: center;
+}
+#date{
+    font-size: 25pt;
+    color: cornsilk;ß
+}
