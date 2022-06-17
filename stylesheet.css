@@ -3,6 +3,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+    background-size: 65%;
     background-color: rgb(5, 5, 5);
 }
 h1{
@@ -13,8 +14,6 @@ h1{
     font-size: 50pt;
 }
 #container{
-    display: table;
-    
     justify-content: center;  
     width: 75%;
     height:75%;
@@ -23,6 +22,7 @@ h1{
 .form-group {
     margin-top: 5%;
     padding: 3%;
+    display: table;
 }
 .label{
     font-size: 20pt;
@@ -31,10 +31,17 @@ h1{
 }
 #title{
     font-size: 25pt;
-    color: cornsilk;
-    position: center;
+    color:rgb(206, 27, 131);
+    justify-content: center;
+    display: inline;
+    display: flex;
+    text-shadow: 2px 2px 4px rgb(31, 89, 247);
 }
 #date{
     font-size: 25pt;
-    color: cornsilk;ß
+    color: rgb(206, 27, 131);
+    justify-content: center;
+    display: inline;
+    display: flex;
+    text-shadow: 2px 2px 4px rgb(31, 89, 247);
 }
