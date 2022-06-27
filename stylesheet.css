@@ -45,3 +45,7 @@ h1{
     display: flex;
     text-shadow: 2px 2px 4px rgb(31, 89, 247);
 }
+#button{
+    display: flex;
+    justify-content: center;
+}
