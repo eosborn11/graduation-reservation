@@ -14,31 +14,31 @@
         <div id="date">June 23rd, 2022 6-8pm</div>
         <div id="container">
            <div id ="form">
-               <form>
+               <form action="#" onsubmit="submitReservation();">
                     <div class="form-group">
                         <label class= "label">Name:</label>
-                        <input type="text" placeholder="Enter Name">
+                        <input type="text" name="fullName" id="fullName" placeholder="Enter Name">
                     </div>
                     <div class="form-group">
                         <label class= "label">Phone Number:</label>
-                        <input type="text" placeholder="Enter Phone Number">
+                        <input type="text" name="phoneNumber" id="phoneNumber" placeholder="Enter Phone Number">
                     </div>
                     <div class="form-group">
                         <label class = "label">Number of Attendees:</label>
                         <br>
-                        <input type="radio">
+                        <input type="radio" name="numberOfAttendees" id="numberOfAttendees" value="1">
                         <label class= "label">1</label>
                         <br>
-                        <input type="radio">
+                        <input type="radio" name="numberOfAttendees" id="numberOfAttendees" value="2">
                         <label class= "label">2</label>
                     </div>
                     <div class="form-group">
                         <label class= "label">Meal Preference:</label>
                         <br>
-                        <input type="radio">
+                        <input type="radio" name="meal" id="meal" value="1">
                         <label class= "label">Vegetarian</label>
                         <br>
-                        <input type="radio">
+                        <input type="radio" name="meal" id="meal" value="2">
                         <label class= "label">Non-Vegetarian</label>
                     </div>
                     <div id="button">
@@ -50,5 +50,6 @@
 
     </div>
     
+<script type="text/javascript" src="./script.js"></script>
 </body>
 </html>
