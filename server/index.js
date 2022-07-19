@@ -1,10 +1,10 @@
 const express = require("express");
 const port = 2000;
-const bodyParser = require("body-parser");
+var cors = require("cors");
 const app = express();
 //const dbConn = require('./dbConn');
 
-app.use(bodyParser.urlencoded({extended: true}))
+// app.use(bodyParser.urlencoded({extended: false}))
 app.use(express.json())
 const dotenv = require('dotenv');
 dotenv.config();
@@ -17,6 +17,15 @@ const pool = new Pool({
     password: process.env.DB_PASSWORD,
     post: 5432
 })
+var corsOptions = {
+    origin: "*",
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+    preflightContinue: false,
+    optionsSuccessStatus: 204
+}
+
+app.use(cors(corsOptions));
+
 
 app.get("/", (req, res) => {
     res.send("Welcome to my Backend/API")

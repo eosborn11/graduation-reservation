@@ -1,20 +1,47 @@
 function submitReservation() {
-    let fullName = document.getElementById("fullName");
-    let phoneNumber =document.getElementById("phoneNumber")
-    let numberOfAttendees = document.getElementsById("numberOfAttendees");
-    let meal = document.getElementById("meal");
+    var fullName = document.getElementById("fullName").value;
+    var phoneNumber =document.getElementById("phoneNumber").value;
+    var numberOfAttendees = document.getElementById("numberOfAttendees");
+    var meal = document.getElementById("meal");
+    var attendeesValue = '';
+    var mealValue = '';
 
-    for(i = 0; i < ele.length; i++) {
-        if(ele[i].checked) {
-            console.log(ele[i].value)
-        }    
+    if (numberOfAttendees.checked) {
+        attendeesValue = document.getElementById("numberOfAttendees").value;
+    } else {
+        attendeesValue = document.getElementById("numberOfAttendees2").value;
     }
 
-    for(i = 0; i < ele.length; i++) {
-        if(ele[i].checked) {
-            console.log(ele[i].value)
-        }    
+    if (meal.checked) {
+        mealValue = document.getElementById("meal").value;
+    } else {
+        mealValue = document.getElementById("meal2").value;
     }
 
-    fetch(`http://localhost:2000`,)
+    console.log("fullname", fullName);
+    console.log("Phonenumber", phoneNumber);
+    console.log("attendees", attendeesValue);
+    console.log("meal", mealValue);
+    var payload = {
+        name: fullName,
+        phone_number: phoneNumber,
+        attendees: attendeesValue,
+        meal_preference: mealValue
+    }
+
+    fetch(`http://localhost:2000`,{
+        method: "POST",
+        body: JSON.stringify(payload),
+        headers: {
+            'Content-Type': 'application/json',
+        }
+    })
+    .then((data) => {
+        console.log(data)
+        alert("data submitted successfully")
+    })
+    .catch((err) => {
+        console.log(err);
+        alert("Error")
+    })
 }

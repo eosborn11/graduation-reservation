@@ -14,7 +14,7 @@
         <div id="date">June 23rd, 2022 6-8pm</div>
         <div id="container">
            <div id ="form">
-               <form action="#" onsubmit="submitReservation();">
+               <!-- <form action="#" onsubmit=""> -->
                     <div class="form-group">
                         <label class= "label">Name:</label>
                         <input type="text" name="fullName" id="fullName" placeholder="Enter Name">
@@ -29,22 +29,22 @@
                         <input type="radio" name="numberOfAttendees" id="numberOfAttendees" value="1">
                         <label class= "label">1</label>
                         <br>
-                        <input type="radio" name="numberOfAttendees" id="numberOfAttendees" value="2">
+                        <input type="radio" name="numberOfAttendees" id="numberOfAttendees2" value="2">
                         <label class= "label">2</label>
                     </div>
                     <div class="form-group">
                         <label class= "label">Meal Preference:</label>
                         <br>
-                        <input type="radio" name="meal" id="meal" value="1">
+                        <input type="radio" name="meal" id="meal" value="Vegetarian">
                         <label class= "label">Vegetarian</label>
                         <br>
-                        <input type="radio" name="meal" id="meal" value="2">
+                        <input type="radio" name="meal" id="meal2" value="Non-Vegetarian">
                         <label class= "label">Non-Vegetarian</label>
                     </div>
                     <div id="button">
-                    <button>Submit</button>
+                    <button onclick="submitReservation();">Submit</button>
                     </div>
-                </form>
+                <!-- </form> -->
            </div> 
         </div>
 
